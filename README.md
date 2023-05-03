@@ -30,4 +30,4 @@ curl --request POST \
 ```
 The above command will make a POST request to the `calculate` endpoint of the API running on `http://localhost:8080`. The request body should be a JSON object with two keys: `flights` and `route`. The `flights` key should have an array of flight lists in the format `["from_airport_code", "to_airport_code"]`, and the `route` key should have an array of two airport codes in the format `["origin_airport_code", "destination_airport_code"]`.
 
-The API will respond with a JSON object containing the calculated route and the total cost of the trip.
+The API will respond with a JSON object containing the calculated route.
