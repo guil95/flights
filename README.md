@@ -1,4 +1,6 @@
 # flights
+[![codecov](https://codecov.io/gh/guil95/flights/branch/main/graph/badge.svg?token=KLHO4Y06WC)](https://codecov.io/gh/guil95/flights)
+[![Go](https://github.com/guil95/flights/actions/workflows/app.yml/badge.svg)](https://github.com/guil95/flights/actions/workflows/app.yml)
 ![flights.gif](.github/images/flights.gif)
 
 This API is designed to calculate the route with the flights list provided.
