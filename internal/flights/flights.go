@@ -14,10 +14,6 @@ func (i InvalidFlight) Error() string {
 }
 
 func (f Flights) CalculateRoute() (Calculation, error) {
-	if len(f.Route) == 0 || len(f.FlightsList) == 0 {
-		return Calculation{}, InvalidFlight{}
-	}
-
 	if !f.validateFlights() {
 		return Calculation{}, InvalidFlight{}
 	}
@@ -29,6 +25,10 @@ func (f Flights) CalculateRoute() (Calculation, error) {
 }
 
 func (f Flights) validateFlights() bool {
+	if len(f.Route) == 0 || len(f.FlightsList) == 0 {
+		return false
+	}
+	
 	var existStart bool
 	var existEnd bool
 
