@@ -90,6 +90,9 @@ func TestCalculateRoute(t *testing.T) {
 			result, err := tt.flights.CalculateRoute()
 			assert.Equal(t, tt.expected, result)
 			assert.IsType(t, tt.expectedErr, err)
+			if err != nil {
+				assert.Equal(t, "invalid flight", err.Error())
+			}
 		})
 	}
 }
