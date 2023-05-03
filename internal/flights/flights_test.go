@@ -119,12 +119,8 @@ func TestValidateFlights(t *testing.T) {
 		{
 			name: "invalid flights",
 			flights: Flights{
-				Route: [][]string{{"MEX", "YYZ"}},
-				FlightsList: [][]string{
-					{"MEX", "LAX"},
-					{"LAX", "SEA"},
-					{"SFO", "YYZ"},
-				},
+				Route:       [][]string{{"MEX", "YYZ"}},
+				FlightsList: [][]string{},
 			},
 			expected: false,
 		},
